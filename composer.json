@@ -1,0 +1,29 @@
+{
+    "name": "jxmods/jxvouchershow",
+    "description": "OXID eShop Admin Extension for Displaying all Vouchers of a Coupon Serie",
+    "license": "GPL-3.0-or-later",
+    "type": "oxideshop-module",
+    "keywords": ["oxid", "module", "voucher", "coupon"],
+    "authors": [
+        {
+            "name": "Joachim Barthel",
+            "email": "jobarthel@gmail.com"
+        }
+    ],
+    "require": {
+        "oxid-esales/oxideshop-ce": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JxMods\\JxVoucherShow\\": ""
+        }
+    },
+    "extra": {
+        "oxideshop": {
+            "blacklist-filter": [
+                "Application/views/**/*.tpl"
+            ],
+            "target-directory": "jxmods/jxvouchershow"
+        }
+    }
+}
