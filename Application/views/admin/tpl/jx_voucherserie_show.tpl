@@ -68,15 +68,15 @@ function changeFnc( fncName )
     </div>
 
     <div style="width:40%;float:left;">
-        <fieldset title="Gutschein" style="margin-left:15px; padding-top:15px;">
-            <legend>Gutschein</legend>
+        <fieldset title="[{ oxmultilang ident="JXMODS_VOUCHER_COUPON" }]" style="margin-left:15px; padding-top:15px;">
+            <legend>[{ oxmultilang ident="JXMODS_VOUCHER_COUPON" }]</legend>
             <iframe src="[{$oViewConf->getSelfLink()}]&cl=jx_voucherserie_show&voucherid=[{$oxid}]" width="100%" height="250" frameborder="0" name="jxvouchershow_detail" align="left">
             </iframe>
         </fieldset>
     </div>
 
     <div style="float:right;position:relative;bottom:-40px;padding-right:10px;">
-        <a href="https://github.com/job963/jxVoucherShow" target="_blank"><span style="color:gray;">jxVoucherShow</span></a>
+        <a href="https://github.com/oligoform/jxVoucherShow" target="_blank"><span style="color:gray;">jxVoucherShow</span></a>
     </div>
 
 </div>

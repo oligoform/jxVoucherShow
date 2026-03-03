@@ -20,9 +20,6 @@
     },
     "extra": {
         "oxideshop": {
-            "blacklist-filter": [
-                "Application/views/**/*.tpl"
-            ],
             "target-directory": "jxmods/jxvouchershow"
         }
     }

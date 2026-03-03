@@ -14,7 +14,7 @@
 				<td><b>[{ $aVoucher.oxvouchernr }]</b></td>
 			</tr>
 			<tr>
-				<td>Status</td>
+				<td>[{ oxmultilang ident="JXMODS_VOUCHER_STATUS" }]</td>
 				<td>[{if $aVoucher.oxactive == "1"}]
 						<span style="color:forestgreen; font-weight:bold;">[{ oxmultilang ident="VOUCHERSERIE_MAIN_AVAILABLE" }]</span>
 					[{else}]
@@ -45,9 +45,9 @@
 			<tr>
 				<td valign="top">[{ oxmultilang ident="PRICEALARM_MAIN_CUSTOMER" }]</td>
 				<td>
-					<b>[{$aVoucher.oxfname}] [{$aVoucher.oxlname}][{if $aVoucher.oxlname}]<br />[{/if}]
-					[{$aVoucher.oxstreet}] [{$aVoucher.oxstreetnr}][{if $aVoucher.oxlname}]<br />[{/if}]
-					[{$aVoucher.oxzip}] [{$aVoucher.oxcity}]</b>
+					<b>[{$aVoucher.oxfname|escape}] [{$aVoucher.oxlname|escape}][{if $aVoucher.oxlname}]<br />[{/if}]
+					[{$aVoucher.oxstreet|escape}] [{$aVoucher.oxstreetnr|escape}][{if $aVoucher.oxlname}]<br />[{/if}]
+					[{$aVoucher.oxzip|escape}] [{$aVoucher.oxcity|escape}]</b>
 				</td>
 			</tr>
 
@@ -64,7 +64,7 @@
 						[{if $aVoucher.oxdiscounttype == "absolute"}]
 							[{ $aVoucher.oxcurrency }]
 						[{elseif $aVoucher.oxdiscounttype == "percent"}]
-							[{ oxmultilang ident="JX_VOUCHER_SHOW_ABSOLUTE" }]
+							[{ oxmultilang ident="JX_VOUCHER_SHOW_PERCENT" }]
 						[{else}]
 						[{/if}]
 					[{/if}]</b>
